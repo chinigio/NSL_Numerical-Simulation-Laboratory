@@ -1,0 +1,11 @@
+SIMULATION_TYPE        0
+RESTART                1
+TEMP                   2
+NPART                  108
+RHO                    0.05
+R_CUT                  5
+DELTA                  0.001
+NBLOCKS                200
+NSTEPS                 500
+
+ENDINPUT
