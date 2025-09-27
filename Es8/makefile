@@ -18,3 +18,5 @@ run8.1: es8.1.exe
 	time ./es8.1.exe
 run8.2: es8.2.exe
 	time ./es8.2.exe
+clean:
+	rm *.o *.exe
