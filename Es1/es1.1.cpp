@@ -63,5 +63,31 @@ int main (){
     }
     out.close();
 
+    //Chi test n2 
+    s = 100; // Number of sub-intervals
+    n = 10000; // Number of random numbers 
+    rip = 1000; // Number of repetitions
+    vector <double> chi2;
+
+    for(int i=0; i<rip; i++){
+        vector <int> count(s,0);
+        for(int j=0; j<n; j++){
+            int k = int(rnd.Rannyu()*s);
+            count[k]++;
+        }
+        double sum = 0;
+        for(int j=0; j<s; j++){
+            sum += pow(count[j]-n/s,2)/(n/s);
+        }
+        chi2.push_back(sum);
+    }
+
+    // Save data in a file
+    out.open("data/chi2.dat");
+    for(int i=0; i<rip; i++){
+        out << i << " " << chi[i] << endl;
+    }
+    out.close();
+
     return 0;
 }
