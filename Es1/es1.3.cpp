@@ -16,7 +16,7 @@ int main(){
     int d = 1; // distance between lines
     double L = 0.5; // needle lenght
     int T = 10000; // tables length
-    int N_t = 100000; // Number of throws
+    int N_t = 1000000; // Number of throws
     int N_b = 100; // Number of blocks
     double y1=1; // it' no relevant the choice for y1 for the simmetry of the problem
 
