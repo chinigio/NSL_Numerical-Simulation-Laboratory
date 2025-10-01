@@ -20,7 +20,7 @@ double error(vector <double> AV, vector <double> AV2, int n){
     if(n==0){
         return 0;
     }else
-        return sqrt((AV2[n] - pow(AV[n],2))/(n-1));
+        return sqrt((AV2[n] - pow(AV[n],2))/(n));
 };
 
 double error(double ave, double ave2){
